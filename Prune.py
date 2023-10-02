@@ -24,7 +24,7 @@
 #   }
 # return (C_k);
 
-from fdtool_modules import Apriori_Gen,binaryRepr
+import Apriori_Gen,binaryRepr
 
 def f(C_k, E, Closure, df, U):
 

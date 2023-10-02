@@ -8,7 +8,7 @@
 #           E = E *Union* { X <-> Y}    \\by Theorem 3
 # return (E);
 
-from fdtool_modules import binaryRepr
+import binaryRepr
 
 def f(C_km1, F, Closure, U):
 
