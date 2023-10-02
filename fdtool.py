@@ -21,13 +21,11 @@
 
 __version__="0.1.7"
 
-from git import Repo
-Repo.clone_from('https://github.com/camillasancricca/DATADIQ.git')
+import githubimport
+from camillasancricca/DATADIQ/fdtool_modules import Apriori_Gen, binaryRepr,GetFDs,Prune,ObtainEquivalences
 
 import pandas as pd
 import sys, time, argparse, ntpath, pickle, csv
-from DATADIQ import fdtool_modules
-from fdtool_modules import Apriori_Gen, binaryRepr,GetFDs,Prune,ObtainEquivalences
 from string import ascii_lowercase
 
 MAX_K_LEVEL = 25
