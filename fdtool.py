@@ -22,7 +22,7 @@
 __version__="0.1.7"
 
 import githubimport
-from camillasancricca/DATADIQ/fdtool_modules import Apriori_Gen, binaryRepr,GetFDs,Prune,ObtainEquivalences
+from camillasancricca.DATADIQ.fdtool_modules import Apriori_Gen, binaryRepr,GetFDs,Prune,ObtainEquivalences
 
 import pandas as pd
 import sys, time, argparse, ntpath, pickle, csv
