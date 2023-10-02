@@ -24,8 +24,6 @@
 #   }
 # return (C_k);
 
-import Apriori_Gen,binaryRepr
-
 def f(C_k, E, Closure, df, U):
 
     # Define empty list to store sets to remove from C_k
