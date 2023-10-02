@@ -37,7 +37,7 @@ def main(filePath):
 
     if not fileExtension == "pkl":
         # Read in file, determine whether a pkl or txt/csv
-        try:
+        #try:
             
             # Detect delimiter
             sniffer = csv.Sniffer()
@@ -57,10 +57,10 @@ def main(filePath):
 
             # Read in pandas data frame from csv file
             df = pd.read_csv(filePath, sep = sepType);
-        except IOError:
-            print("File not found")
-            sys.stdout.flush()
-            return;
+        #except IOError:
+            #print("File not found")
+            #sys.stdout.flush()
+            #return;
     else:
         try:
             # Read in pandas data fram pkl file
