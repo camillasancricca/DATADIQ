@@ -33,7 +33,7 @@ def generateFigurePerformance(x_axis, xlabel, results_all, title, legend, score)
     plt.ylabel(score)
     plt.legend()
     #plt.ylim(0.1, 2)  # if you want to fix a limit for the y_axis
-    plt.savefig(your_path + title + ".pdf", bbox_inches='tight') # if you want to save the figure
+    #plt.savefig(your_path + title + ".pdf", bbox_inches='tight') # if you want to save the figure
     plt.show()
 
 def generateFigureDistance(x_axis, xlabel, results_all, title, legend, score):
@@ -49,7 +49,7 @@ def generateFigureDistance(x_axis, xlabel, results_all, title, legend, score):
     plt.ylabel(score)
     plt.legend()
     #plt.ylim(0.1, 2) # if you want to fix a limit for the y_axis
-    plt.savefig(your_path + title + ".pdf", bbox_inches='tight') # if you want to save the figure
+    #plt.savefig(your_path + title + ".pdf", bbox_inches='tight') # if you want to save the figure
     plt.show()
 
 def generateFigureSpeed(x_axis, xlabel, results_all, title, legend, score):
@@ -65,7 +65,7 @@ def generateFigureSpeed(x_axis, xlabel, results_all, title, legend, score):
     plt.ylabel(score)
     plt.legend()
     #plt.ylim(0.1, 2)  # if you want to fix a limit for the y_axis
-    plt.savefig(your_path + title + ".pdf", bbox_inches='tight') # if you want to save the figure
+    #plt.savefig(your_path + title + ".pdf", bbox_inches='tight') # if you want to save the figure
     plt.show()
 
 def plot(x_axis_values, x_label, results, title, algorithms, plot_type):
