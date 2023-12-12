@@ -114,6 +114,7 @@ if __name__ == '__main__':
     # CLUSTERING EXAMPLE
     # (in this toy example, I simply created 10 datasets with respectively 1000,1001,1002,1003,1004,1005,1006,1007,1008,1009 number of samples
     # and I generated the three plots for the evaluation of the results)
+    results_for_each_algorithm = []
     for algorithm in CLUSTERING_ALGORITHMS:  # FIRST CICLE ON THE ALGORITHMS
 
         results_single_algorithm = []
