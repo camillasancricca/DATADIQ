@@ -3,6 +3,20 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
+def encoding_categorical_variables(X):
+    def encode(original_dataframe, feature_to_encode):
+        dummies = pd.get_dummies(original_dataframe[[feature_to_encode]], dummy_na=False)
+        res = pd.concat([original_dataframe, dummies], axis=1)
+        res = res.drop([feature_to_encode], axis=1)
+        return (res)
+
+    categorical_columns=list(X.select_dtypes(include=['bool','object']).columns)
+
+    for col in X.columns:
+        if col in categorical_columns:
+            X = encode(X,col)
+    return X
+
 def plot_imp(df,imp_data,cols):
     sns.set()
     fig, axes = plt.subplots(nrows = len(cols), ncols = 2)
