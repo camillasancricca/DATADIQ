@@ -9,8 +9,8 @@ def plot_imp(df,imp_data,cols):
     fig.set_size_inches(8, 20)
 
     for index, variable in enumerate(cols):
-        sns.distplot(df[variable].dropna(), kde = False, ax = axes[index, 0])
-        sns.distplot(imp_data["IMP" + variable], kde = False, ax = axes[index, 0], color = 'red')
+        sns.displot(df[variable].dropna(), kde = False, ax = axes[index, 0])
+        sns.displot(imp_data["IMP" + variable], kde = False, ax = axes[index, 0], color = 'red')
 
         sns.boxplot(data = pd.concat([df[variable], imp_data["IMP" + variable]], axis = 1),
                     ax = axes[index, 1])
